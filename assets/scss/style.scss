@@ -1,0 +1,145 @@
+$theme:#201F25;
+$maintext:#F0D560;
+$shapeorange:#FF7E53;
+$shapepurple:#755DAC;
+$shapesmokey:#5A5A66;
+
+@mixin halfcircle($width,$height,$color) {
+  position: absolute;
+  width: $width;
+  height: $height;
+  border-radius: $width $width 0 0;
+  background-color: $color;
+}
+body{
+  background-color: $theme;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar
+{
+  padding-top: 15px;
+  box-sizing: border-box;
+  width: 100%;
+  color:white;
+  .logo
+  {
+    float: left;
+    margin-left: 25px;
+  }
+  .navigation
+  {
+    float: right;
+    margin-right: 25px;
+  }
+  .navigation a{
+    margin-left: 50px;
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.navbar::after
+{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.quote
+{
+  h1{
+    position: relative;
+    text-align: center;
+    color:$maintext;
+    font-size: 90px;
+    margin-right: 25px;
+  }
+  .sub
+  {
+    position: absolute;
+    color: $maintext;
+    font-size: 18px;
+    margin-left: 10px;
+    top: 30px;
+  }
+  width: 100%;
+  margin-top: 220px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.home
+{
+  height: 100vh;
+  position: relative;
+  .halfcircle1
+  {
+    @include halfcircle(14vh,7vh,$shapeorange);
+    top:30%;
+    left:15%;
+    transform:rotate(-140deg);
+  }
+  .halfcircle2
+  {
+    @include halfcircle(14vh,7vh,$shapepurple);
+    top:-25;
+    left:30%;
+    transform:rotate(-180deg);
+  }
+  .halfcircle3
+  {
+    @include halfcircle(7vh,3.5vh,$shapesmokey);
+    top:30%;
+    left:50%;
+    transform:rotate(-220deg);
+  }
+
+  .halfcircle4
+  {
+    @include halfcircle(8vh,4vh,$shapesmokey);
+    bottom:15%;
+    right:10%;
+    transform:rotate(-130deg);
+  }
+
+  .halfcircle5
+  {
+    @include halfcircle(14vh,7vh,$shapeorange);
+    bottom:-10;
+    left:70%;
+    transform:rotate(-220deg);
+  }
+  .square
+  {
+    position: absolute;
+    height: 2vmax;
+    width: 2vmax;
+    background-color: #1ED3AB;
+    right: 15%;
+    top:30%;
+    transform: rotate(45deg);
+  }
+  .innersquare
+  {
+    position: absolute;
+    height: 1vmax;
+    width: 1vmax;
+    left: 50%;
+    top: 50%;
+    margin-top: -0.5vmax;
+    margin-left: -0.5vmax;
+    background:$theme;
+  }
+  .parrelelo
+  {
+
+  }
+
+}
+.work
+{
+    height: 500px;
+    background-color: white;
+}
