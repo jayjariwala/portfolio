@@ -134,7 +134,105 @@ body{
   }
   .parrelelo
   {
+  position: absolute;
+	width: 5vmax;
+	height: 5vmax;
+	-webkit-transform: skew(-40deg);
+	-moz-transform: skew(20deg);
+	-o-transform: skew(20deg);
+	background: $shapesmokey;
+  left: 15%;
+  bottom: 10%;
+  }
+  .circle
+  {
+    position: absolute;
+    height:6vmax;
+    width: 6vmax;
+    border-radius: 50%;
+    background-color:$shapesmokey;
+    top:-5%;
+    right:32%;
+  }
+  .innercircle
+  {
+    position: absolute;
+    height: 4vmax;
+    width: 4vmax;
+    border-radius: 50%;
+    top:50%;
+    margin-top: -2vmax;
+    margin-left: -2vmax;
+    left: 50%;
+    background-color: $theme;
+  }
 
+  .stripecontainer1
+  {
+    position: absolute;
+    left: 5%;
+    top:60%;
+  }
+  .stripecontainer2
+  {
+    position: absolute;
+    right:35%;
+    top:60%;
+  }
+  #stripe2
+  {
+    background-color: $shapepurple;
+  }
+  .stripe:nth-child(1)
+  {
+    position: absolute;
+    height: 0.6vmax;
+    width: 1.5vmax;
+    left: -1px;
+    transform: rotate(-45deg);
+    background-color: $maintext;
+  }
+  .stripe:nth-child(2)
+  {
+    @extend .stripe:nth-child(1);
+    transform: rotate(45deg);
+    left:0.6vmax;
+  }
+  .stripe:nth-child(3)
+  {
+    @extend .stripe:nth-child(1);
+    transform: rotate(-45deg);
+    left:1.3vmax;
+  }
+  .stripe:nth-child(4)
+  {
+    @extend .stripe:nth-child(1);
+    transform: rotate(45deg);
+    left:1.9vmax;
+  }
+  .stripe:nth-child(5)
+  {
+    @extend .stripe:nth-child(1);
+    transform: rotate(-45deg);
+    left:2.7vmax;
+  }
+  .stripe:nth-child(6)
+  {
+    @extend .stripe:nth-child(1);
+    transform: rotate(45deg);
+    left:3.5vmax;
+  }
+  .stripe:nth-child(7)
+  {
+    @extend .stripe:nth-child(1);
+    transform: rotate(-45deg);
+    left:4.2vmax;
+  }
+  .stripe:nth-child(8)
+  {
+    @extend .stripe:nth-child(1);
+    transform: rotate(45deg);
+    left:4.9vmax;
   }
 
 }
@@ -142,4 +240,25 @@ body{
 {
     height: 500px;
     background-color: white;
+}
+.photo
+{
+  position: relative;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-position: center;
+  background-size: contain;
+  background-image: url('../img/me.jpg');
+  .name
+  {
+    position: absolute;
+    left: 72px;
+    top: 33px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color:$shapeorange;
+    font-size: 18px;
+    line-height: 15px;
+  }
 }
