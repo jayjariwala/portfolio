@@ -3,6 +3,15 @@ body {
   padding: 0;
   margin: 0; }
 
+.logo {
+  height: 40px;
+  width: 40px;
+  border: 2px solid white;
+  box-sizing: border-box;
+  font-size: 32px;
+  padding-left: 9px;
+  color: gold; }
+
 .navbar {
   padding-top: 15px;
   box-sizing: border-box;
@@ -88,7 +97,8 @@ body {
     background-color: #FF7E53;
     bottom: -10;
     left: 70%;
-    transform: rotate(-220deg); }
+    transform: rotate(-220deg);
+    z-index: 0; }
   .home .square {
     position: absolute;
     height: 2vmax;
@@ -135,11 +145,11 @@ body {
     left: 50%;
     background-color: #201F25; }
   .home .stripecontainer1 {
-    position: absolute;
+    position: fixed;
     left: 5%;
     top: 60%; }
   .home .stripecontainer2 {
-    position: absolute;
+    position: fixed;
     right: 35%;
     top: 60%; }
   .home #stripe2 {
@@ -174,8 +184,10 @@ body {
     left: 4.9vmax; }
 
 .work {
+  position: relative;
   height: 500px;
-  background-color: white; }
+  background-color: white;
+  z-index: 5; }
 
 .photo {
   position: relative;
@@ -193,6 +205,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     color: #FF7E53;
     font-size: 18px;
-    line-height: 15px; }
+    line-height: 15px;
+    letter-spacing: 1px; }
 
 /*# sourceMappingURL=style.css.map */
