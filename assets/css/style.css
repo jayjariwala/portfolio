@@ -1,7 +1,8 @@
 body {
   background-color: #201F25;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  text-align: center; }
 
 .logo {
   height: 40px;
@@ -9,24 +10,34 @@ body {
   border: 2px solid white;
   box-sizing: border-box;
   font-size: 32px;
-  padding-left: 9px;
-  color: gold; }
+  padding-left: 0px;
+  color: linear-gradient(red, yellow, green); }
+
+.status {
+  font-family: 'Abel', sans-serif;
+  color: white;
+  font-style: italic;
+  font-size: 18px; }
 
 .navbar {
   padding-top: 15px;
   box-sizing: border-box;
   width: 100%;
-  color: white; }
+  color: white;
+  font-family: 'Abel', sans-serif; }
   .navbar .logo {
     float: left;
-    margin-left: 25px; }
+    margin-left: 25px;
+    font-family: 'Abel', sans-serif;
+    font-family: 'Black Ops One', cursive; }
   .navbar .navigation {
     float: right;
     margin-right: 25px; }
   .navbar .navigation a {
     margin-left: 50px;
     text-decoration: none;
-    color: white; }
+    color: white;
+    font-size: 18px; }
 
 .navbar::after {
   content: "";
@@ -55,45 +66,45 @@ body {
   position: relative; }
   .home .halfcircle1 {
     position: absolute;
-    width: 14vh;
-    height: 7vh;
-    border-radius: 14vh 14vh 0 0;
+    width: 6vmax;
+    height: 3vmax;
+    border-radius: 6vmax 6vmax 0 0;
     background-color: #FF7E53;
     top: 30%;
     left: 15%;
     transform: rotate(-140deg); }
   .home .halfcircle2 {
     position: absolute;
-    width: 14vh;
-    height: 7vh;
-    border-radius: 14vh 14vh 0 0;
+    width: 7vmax;
+    height: 4vmax;
+    border-radius: 7vmax 7vmax 0 0;
     background-color: #755DAC;
     top: -25;
     left: 30%;
     transform: rotate(-180deg); }
   .home .halfcircle3 {
     position: absolute;
-    width: 7vh;
-    height: 3.5vh;
-    border-radius: 7vh 7vh 0 0;
+    width: 4vmax;
+    height: 2vmax;
+    border-radius: 4vmax 4vmax 0 0;
     background-color: #5A5A66;
     top: 30%;
     left: 50%;
     transform: rotate(-220deg); }
   .home .halfcircle4 {
     position: absolute;
-    width: 8vh;
-    height: 4vh;
-    border-radius: 8vh 8vh 0 0;
+    width: 4vmax;
+    height: 2vmax;
+    border-radius: 4vmax 4vmax 0 0;
     background-color: #5A5A66;
     bottom: 15%;
     right: 10%;
     transform: rotate(-130deg); }
   .home .halfcircle5 {
     position: absolute;
-    width: 14vh;
-    height: 7vh;
-    border-radius: 14vh 14vh 0 0;
+    width: 6vmax;
+    height: 3vmax;
+    border-radius: 6vmax 6vmax 0 0;
     background-color: #FF7E53;
     bottom: -10;
     left: 70%;
@@ -193,7 +204,8 @@ body {
   position: relative;
   height: 100px;
   width: 100px;
-  margin: 0 auto;
+  margin: auto;
+  margin-top: -20px;
   border-radius: 50%;
   background-position: center;
   background-size: contain;
@@ -206,6 +218,7 @@ body {
     color: #FF7E53;
     font-size: 18px;
     line-height: 15px;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    text-align: left; }
 
 /*# sourceMappingURL=style.css.map */

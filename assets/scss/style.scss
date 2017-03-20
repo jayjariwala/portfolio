@@ -15,6 +15,7 @@ body{
   background-color: $theme;
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 .logo
 {
@@ -23,30 +24,44 @@ width: 40px;
 border: 2px solid white;
 box-sizing: border-box;
 font-size: 32px;
-padding-left: 9px;
-color:gold;
+padding-left: 0px;
+color: linear-gradient(red, yellow, green);
 }
-
+.status
+{
+  font-family: 'Abel', sans-serif;
+  color: white;
+  font-style: italic;
+  font-size: 18px;
+}
 .navbar
 {
   padding-top: 15px;
   box-sizing: border-box;
   width: 100%;
   color:white;
+    font-family: 'Abel', sans-serif;
+
   .logo
   {
     float: left;
     margin-left: 25px;
+    font-family: 'Abel', sans-serif;
+    font-family: 'Black Ops One', cursive;
   }
   .navigation
   {
     float: right;
     margin-right: 25px;
+  
   }
   .navigation a{
     margin-left: 50px;
     text-decoration: none;
     color: white;
+    font-size: 18px;
+
+
   }
 }
 
@@ -86,21 +101,21 @@ color:gold;
   position: relative;
   .halfcircle1
   {
-    @include halfcircle(14vh,7vh,$shapeorange);
+    @include halfcircle(6vmax,3vmax,$shapeorange);
     top:30%;
     left:15%;
     transform:rotate(-140deg);
   }
   .halfcircle2
   {
-    @include halfcircle(14vh,7vh,$shapepurple);
+    @include halfcircle(7vmax,4vmax,$shapepurple);
     top:-25;
     left:30%;
     transform:rotate(-180deg);
   }
   .halfcircle3
   {
-    @include halfcircle(7vh,3.5vh,$shapesmokey);
+    @include halfcircle(4vmax,2vmax,$shapesmokey);
     top:30%;
     left:50%;
     transform:rotate(-220deg);
@@ -108,7 +123,7 @@ color:gold;
 
   .halfcircle4
   {
-    @include halfcircle(8vh,4vh,$shapesmokey);
+    @include halfcircle(4vmax,2vmax,$shapesmokey);
     bottom:15%;
     right:10%;
     transform:rotate(-130deg);
@@ -116,7 +131,7 @@ color:gold;
 
   .halfcircle5
   {
-    @include halfcircle(14vh,7vh,$shapeorange);
+    @include halfcircle(6vmax,3vmax,$shapeorange);
     bottom:-10;
     left:70%;
     transform:rotate(-220deg);
@@ -259,7 +274,8 @@ color:gold;
   position: relative;
   height: 100px;
   width: 100px;
-  margin: 0 auto;
+  margin: auto;
+  margin-top: -20px;
   border-radius: 50%;
   background-position: center;
   background-size: contain;
@@ -274,5 +290,6 @@ color:gold;
     font-size: 18px;
     line-height: 15px;
     letter-spacing: 1px;
+    text-align: left;
   }
 }
