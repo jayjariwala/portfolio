@@ -27,13 +27,7 @@ font-size: 32px;
 padding-left: 0px;
 color: linear-gradient(red, yellow, green);
 }
-.status
-{
-  font-family: 'Abel', sans-serif;
-  color: white;
-  font-style: italic;
-  font-size: 18px;
-}
+
 .navbar
 {
   padding-top: 15px;
@@ -53,7 +47,7 @@ color: linear-gradient(red, yellow, green);
   {
     float: right;
     margin-right: 25px;
-  
+
   }
   .navigation a{
     margin-left: 50px;
@@ -266,7 +260,7 @@ color: linear-gradient(red, yellow, green);
 {
     position: relative;
     height: 500px;
-    background-color: white;
+    background-color:#161421;
     z-index:5;
 }
 .photo
@@ -292,4 +286,18 @@ color: linear-gradient(red, yellow, green);
     letter-spacing: 1px;
     text-align: left;
   }
+
+}
+
+.icons
+{
+  margin-top: 15px;
+  i{
+      margin-left: 25px;
+      color: silver;
+  }
+  i:hover{
+    color: $shapeorange;
+  }
+
 }
