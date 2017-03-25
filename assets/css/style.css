@@ -32,6 +32,8 @@ body {
     text-decoration: none;
     color: white;
     font-size: 18px; }
+  .navbar .navigation a:hover {
+    color: #F0D560; }
 
 .navbar::after {
   content: "";
@@ -191,7 +193,7 @@ body {
 .work {
   position: relative;
   height: 500px;
-  background-color: #161421;
+  background: linear-gradient(180deg, #44494f 0, #44494f 18%, #6b747b 81%, #6b747b);
   z-index: 5; }
 
 .photo {
@@ -221,6 +223,31 @@ body {
     margin-left: 25px;
     color: silver; }
   .icons i:hover {
-    color: #FF7E53; }
+    color: white;
+    font-size: 22px; }
+
+.triangle1 {
+  height: 90px;
+  width: 50%;
+  background-color: #44494f;
+  -webkit-clip-path: polygon(100% 100%, 0 0, 0 100%);
+  clip-path: polygon(100% 100%, 0 0, 0 100%);
+  float: left; }
+
+.triangle2 {
+  height: 90px;
+  width: 50%;
+  background-color: #44494f;
+  -webkit-clip-path: polygon(100% 100%, 0 100%, 100% 0);
+  clip-path: polygon(100% 100%, 0 100%, 100% 0);
+  float: right; }
+
+.shapecontainer {
+  overflow: hidden; }
+
+.fa-angle-down {
+  position: absolute;
+  color: #F0D560;
+  bottom: 10px; }
 
 /*# sourceMappingURL=style.css.map */

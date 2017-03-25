@@ -54,8 +54,9 @@ color: linear-gradient(red, yellow, green);
     text-decoration: none;
     color: white;
     font-size: 18px;
-
-
+  }
+  .navigation a:hover{
+    color: $maintext;
   }
 }
 
@@ -260,7 +261,7 @@ color: linear-gradient(red, yellow, green);
 {
     position: relative;
     height: 500px;
-    background-color:#161421;
+    background: linear-gradient(180deg,#44494f 0,#44494f 18%,#6b747b 81%,#6b747b);
     z-index:5;
 }
 .photo
@@ -297,7 +298,37 @@ color: linear-gradient(red, yellow, green);
       color: silver;
   }
   i:hover{
-    color: $shapeorange;
+    color: white;
+    font-size: 22px;
   }
+
+}
+.triangle1
+{
+  height: 90px;
+  width: 50%;
+  background-color: #44494f;
+  -webkit-clip-path: polygon(100% 100%, 0 0, 0 100%);
+  clip-path: polygon(100% 100%, 0 0, 0 100%);
+  float: left;
+}
+.triangle2
+{
+  height: 90px;
+  width: 50%;
+  background-color: #44494f;
+  -webkit-clip-path: polygon(100% 100%, 0 100%, 100% 0);
+  clip-path: polygon(100% 100%, 0 100%, 100% 0);
+  float: right;
+}
+.shapecontainer
+{
+  overflow: hidden;
+}
+.fa-angle-down
+{
+  position: absolute;
+  color:$maintext;
+  bottom: 10px;
 
 }
