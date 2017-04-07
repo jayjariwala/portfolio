@@ -15,7 +15,6 @@ body{
   background-color: $theme;
   padding: 0;
   margin: 0;
-  text-align: center;
 }
 .logo
 {
@@ -25,7 +24,6 @@ border: 2px solid white;
 box-sizing: border-box;
 font-size: 32px;
 padding-left: 0px;
-color: linear-gradient(red, yellow, green);
 }
 
 .navbar
@@ -40,7 +38,7 @@ color: linear-gradient(red, yellow, green);
   {
     float: left;
     margin-left: 25px;
-    font-family: 'Abel', sans-serif;
+
     font-family: 'Black Ops One', cursive;
   }
   .navigation
@@ -94,6 +92,8 @@ color: linear-gradient(red, yellow, green);
 {
   height: 100vh;
   position: relative;
+  background-color: $theme;
+  text-align: center;
   .halfcircle1
   {
     @include halfcircle(6vmax,3vmax,$shapeorange);
@@ -257,20 +257,14 @@ color: linear-gradient(red, yellow, green);
   }
 
 }
-.work
-{
-    position: relative;
-    height: 500px;
-    background: linear-gradient(180deg,#44494f 0,#44494f 18%,#6b747b 81%,#6b747b);
-    z-index:5;
-}
+
 .photo
 {
   position: relative;
   height: 100px;
   width: 100px;
   margin: auto;
-  margin-top: -20px;
+  margin-top: 20px;
   border-radius: 50%;
   background-position: center;
   background-size: contain;
@@ -324,11 +318,39 @@ color: linear-gradient(red, yellow, green);
 .shapecontainer
 {
   overflow: hidden;
+  background-color: $theme;
 }
 .fa-angle-down
 {
   position: absolute;
+  margin-left: -10px;
   color:$maintext;
   bottom: 10px;
+}
 
+.introduction
+{
+    position: relative;
+    height: 500px;
+    background: linear-gradient(180deg,#44494f 0,#44494f 18%,#6b747b 81%,#6b747b);
+    z-index:5;
+    .introtext-wrap
+    {
+      position: relative;
+      top:90px;
+    }
+    .hey
+    {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 90px;
+        color: $shapeorange;
+
+text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+    }
+    .about
+    {
+      max-width: 500px;
+    }
 }

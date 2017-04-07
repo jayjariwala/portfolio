@@ -1,8 +1,7 @@
 body {
   background-color: #201F25;
   padding: 0;
-  margin: 0;
-  text-align: center; }
+  margin: 0; }
 
 .logo {
   height: 40px;
@@ -10,8 +9,7 @@ body {
   border: 2px solid white;
   box-sizing: border-box;
   font-size: 32px;
-  padding-left: 0px;
-  color: linear-gradient(red, yellow, green); }
+  padding-left: 0px; }
 
 .navbar {
   padding-top: 15px;
@@ -22,7 +20,6 @@ body {
   .navbar .logo {
     float: left;
     margin-left: 25px;
-    font-family: 'Abel', sans-serif;
     font-family: 'Black Ops One', cursive; }
   .navbar .navigation {
     float: right;
@@ -59,7 +56,9 @@ body {
 
 .home {
   height: 100vh;
-  position: relative; }
+  position: relative;
+  background-color: #201F25;
+  text-align: center; }
   .home .halfcircle1 {
     position: absolute;
     width: 6vmax;
@@ -190,18 +189,12 @@ body {
     transform: rotate(45deg);
     left: 4.9vmax; }
 
-.work {
-  position: relative;
-  height: 500px;
-  background: linear-gradient(180deg, #44494f 0, #44494f 18%, #6b747b 81%, #6b747b);
-  z-index: 5; }
-
 .photo {
   position: relative;
   height: 100px;
   width: 100px;
   margin: auto;
-  margin-top: -20px;
+  margin-top: 20px;
   border-radius: 50%;
   background-position: center;
   background-size: contain;
@@ -243,11 +236,29 @@ body {
   float: right; }
 
 .shapecontainer {
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #201F25; }
 
 .fa-angle-down {
   position: absolute;
+  margin-left: -10px;
   color: #F0D560;
   bottom: 10px; }
+
+.introduction {
+  position: relative;
+  height: 500px;
+  background: linear-gradient(180deg, #44494f 0, #44494f 18%, #6b747b 81%, #6b747b);
+  z-index: 5; }
+  .introduction .introtext-wrap {
+    position: relative;
+    top: 90px; }
+  .introduction .hey {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 90px;
+    color: #FF7E53;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1); }
+  .introduction .about {
+    max-width: 500px; }
 
 /*# sourceMappingURL=style.css.map */
