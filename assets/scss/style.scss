@@ -297,29 +297,8 @@ padding-left: 0px;
   }
 
 }
-.triangle1
-{
-  height: 90px;
-  width: 50%;
-  background-color: #44494f;
-  -webkit-clip-path: polygon(100% 100%, 0 0, 0 100%);
-  clip-path: polygon(100% 100%, 0 0, 0 100%);
-  float: left;
-}
-.triangle2
-{
-  height: 90px;
-  width: 50%;
-  background-color: #44494f;
-  -webkit-clip-path: polygon(100% 100%, 0 100%, 100% 0);
-  clip-path: polygon(100% 100%, 0 100%, 100% 0);
-  float: right;
-}
-.shapecontainer
-{
-  overflow: hidden;
-  background-color: $theme;
-}
+
+
 .fa-angle-down
 {
   position: absolute;
@@ -327,22 +306,78 @@ padding-left: 0px;
   color:$maintext;
   bottom: 10px;
 }
+.triangle-path
+{
+  fill:$theme;
+}
 
 .introduction
 {
     position: relative;
-    height: 500px;
+    height: 458px;
     background: linear-gradient(180deg,#44494f 0,#44494f 18%,#6b747b 81%,#6b747b);
     z-index:5;
     .introtext-wrap
     {
       position: relative;
       top:90px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+    }
+    .line
+    {
+      position: absolute;
+      height: 350px;
+      width: 2px;
+      //background-color: $shapeorange;
+      border: 2px dotted $shapeorange;
+      left:50%;
+      top:60px;
+      margin-left: -1px;
+    }
+    .aboutme
+    {
+      color: white;
+      text-align: justify;
+      font-size: 20px;
+      line-height: 35px;
+      font-family: 'Abel', sans-serif;
+    }
+    .badge
+    {
+      background-color:$theme;
+      margin-right: 8px;
+      padding: 1%;
+      margin-top: 8px;
+    }
+
+    .point:nth-child(1)
+    {
+      position: absolute;
+      top:-4px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $shapeorange;
+      margin-left: -5px;
+    }
+    .point:nth-child(2)
+    {
+      width: 10px;
+      height: 5px;
+      bottom: 0px;
+      border-radius: 50%;
+      background-color: $shapeorange;
+      margin-left: -5px;
+      position: absolute;
+      bottom: -10px;
+      border-radius: 0;
     }
     .hey
     {
         font-family: 'Source Sans Pro', sans-serif;
-        font-size: 90px;
+        font-size: 40px;
         color: $shapeorange;
 
 text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
@@ -352,5 +387,35 @@ text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
     .about
     {
       max-width: 500px;
+      display: inline-block;
     }
+    .skills
+    {
+      max-width: 500px;
+      display: inline-block;
+    }
+    .triangle-about
+    {
+      top:170px;
+    }
+    .triangle-path
+    {
+      fill:#6b747b;
+    }
+}
+.triangle
+{
+  height: 100px;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+}
+.hide-div-triangle
+{
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: -100px;
+  z-index: 0;
+  background-color: #44494F;
 }

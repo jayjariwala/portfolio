@@ -219,46 +219,91 @@ body {
     color: white;
     font-size: 22px; }
 
-.triangle1 {
-  height: 90px;
-  width: 50%;
-  background-color: #44494f;
-  -webkit-clip-path: polygon(100% 100%, 0 0, 0 100%);
-  clip-path: polygon(100% 100%, 0 0, 0 100%);
-  float: left; }
-
-.triangle2 {
-  height: 90px;
-  width: 50%;
-  background-color: #44494f;
-  -webkit-clip-path: polygon(100% 100%, 0 100%, 100% 0);
-  clip-path: polygon(100% 100%, 0 100%, 100% 0);
-  float: right; }
-
-.shapecontainer {
-  overflow: hidden;
-  background-color: #201F25; }
-
 .fa-angle-down {
   position: absolute;
   margin-left: -10px;
   color: #F0D560;
   bottom: 10px; }
 
+.triangle-path {
+  fill: #201F25; }
+
 .introduction {
   position: relative;
-  height: 500px;
+  height: 458px;
   background: linear-gradient(180deg, #44494f 0, #44494f 18%, #6b747b 81%, #6b747b);
   z-index: 5; }
   .introduction .introtext-wrap {
     position: relative;
-    top: 90px; }
+    top: 90px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around; }
+  .introduction .line {
+    position: absolute;
+    height: 350px;
+    width: 2px;
+    border: 2px dotted #FF7E53;
+    left: 50%;
+    top: 60px;
+    margin-left: -1px; }
+  .introduction .aboutme {
+    color: white;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 35px;
+    font-family: 'Abel', sans-serif; }
+  .introduction .badge {
+    background-color: #201F25;
+    margin-right: 8px;
+    padding: 1%;
+    margin-top: 8px; }
+  .introduction .point:nth-child(1) {
+    position: absolute;
+    top: -4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FF7E53;
+    margin-left: -5px; }
+  .introduction .point:nth-child(2) {
+    width: 10px;
+    height: 5px;
+    bottom: 0px;
+    border-radius: 50%;
+    background-color: #FF7E53;
+    margin-left: -5px;
+    position: absolute;
+    bottom: -10px;
+    border-radius: 0; }
   .introduction .hey {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 90px;
+    font-size: 40px;
     color: #FF7E53;
     text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1); }
   .introduction .about {
-    max-width: 500px; }
+    max-width: 500px;
+    display: inline-block; }
+  .introduction .skills {
+    max-width: 500px;
+    display: inline-block; }
+  .introduction .triangle-about {
+    top: 170px; }
+  .introduction .triangle-path {
+    fill: #6b747b; }
+
+.triangle {
+  height: 100px;
+  width: 100%;
+  position: relative;
+  z-index: 5; }
+
+.hide-div-triangle {
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: -100px;
+  z-index: 0;
+  background-color: #44494F; }
 
 /*# sourceMappingURL=style.css.map */
