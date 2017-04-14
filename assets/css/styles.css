@@ -1,14 +1,35 @@
+
+
 .home {
-  position: relative;
-  height: 800px;
+
+  height: 900px;
   width: 100%;
-  background-image: url("https://s10.postimg.org/gcwdb38e1/ian-simmonds-124058.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top; }
+  background-color: black;
+  padding-top: 15px;
+}
+.navigation
+{
+  text-align: center;
+
+}
+
+.navigation a{
+  margin-left: 30px;
+
+}
+  .image-container
+  {
+    position:relative;
+    background-image: url("https://s10.postimg.org/gcwdb38e1/ian-simmonds-124058.jpg");
+    background-size: cover;
+    top:10vh;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
 
 .overlay-black {
-  height: 800px;
+  height: 100%;
   width: 100%;
   background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.05) 0%, rgba(0, 0, 0, 0.47) 29%, black 65%);
   /* ff3.6+ */
@@ -20,9 +41,20 @@
   /* opera 11.10+ */
   background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.05) 0%, rgba(0, 0, 0, 0.47) 29%, black 65%);
   /* ie10+ */
-  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.05) 0%, rgba(0, 0, 0, 0.47) 29%, black 65%);
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.05) 10%, rgba(0, 0, 0, 0.5) 29%, black 65%);
   /* w3c */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=1 );
   /* ie6-9 */ }
-
+.main-text-container
+{
+  position: absolute;
+}
+.name
+{
+  color: white;
+  font-family: 'YourFontName';
+  font-size: 50px;
+  text-transform:uppercase;
+  color: #ffa800;
+}
 /*# sourceMappingURL=styles.css.map */
